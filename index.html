@@ -24,7 +24,56 @@
         </div>
       </nav>
     </header>
-
-    <script src="index.js"></script>
-  </body>
-</html>
+    <main>
+        <div class="flex justify-between w-[90%] bg-gray-200 mt-5 mx-auto">
+          <div class="box flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 id="element" class="card-title">Traingle</h2>
+                <p>Area (A) = 0.5 x b x h</p>
+                <div class="flex gap-2 justify-between">
+                  <div class="flex gap-2 justify-between">
+                    <input
+                      class="w-24 bg-gray-300"
+                      type="text"
+                      placeholder="b"
+                      name=""
+                      id="traingle-b"
+                    />
+                    <p>cm</p>
+                  </div>
+                  <div class="flex gap-2 justify-between">
+                    <input
+                      class="w-24 bg-gray-300"
+                      type="text"
+                      placeholder="h"
+                      name=""
+                      id="traingle-h"
+                    />
+                    <p>cm</p>
+                  </div>
+                </div>
+                <p id="show"></p>
+                <div class="card-actions">
+                  <button id="triangle" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ariya w-[25%] mx-auto text-center">
+            <h1>Area Calculation</h1>
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <tbody id="table-cantainer"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+      <script src="index.js"></script>
+    </body>
+  </html>
