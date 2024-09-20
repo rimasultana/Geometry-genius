@@ -27,7 +27,7 @@
       </nav>
     </header>
     <main>
-      <div class="flex justify-between w-[90%] bg-gray-200 mt-5 mx-auto">
+      <div class="flex justify-between w-11/12 gap-3 mt-5 mx-auto">
         <div class="box flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
           <!-- card-1 -->
           <div
@@ -68,7 +68,7 @@
           </div>
           <!-- Card-2 -->
           <div
-            class="card w-full bg-base-100 border border-gray-400 hover:bg-pink-300"
+            class="card w-full bg-base-100 border border-gray-400"
           >
             <figure class="px-10 pt-10">
               <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
@@ -100,7 +100,6 @@
                 <button id="rectangle" class="btn bg-teal-200">
                   Calculate
                 </button>
-                <!-- ID পরিবর্তন -->
               </div>
             </div>
           </div>
@@ -118,22 +117,8 @@
               <p>Area (A) = b x h</p>
               <div class="flex gap-2 justify-between">
                 <div class="flex gap-2 justify-between">
-                  <input
-                    class="w-24 bg-gray-300 pl-2"
-                    type="text"
-                    placeholder="b"
-                    id="parallelogram-b"
-                  />
-                  <p>cm</p>
-                </div>
-                <div class="flex gap-2 justify-between">
-                  <input
-                    class="w-24 bg-gray-300 pl-2"
-                    type="text"
-                    placeholder="h"
-                    id="parallelogram-h"
-                  />
-                  <p>cm</p>
+                  <p>a=<span id="parallelogram-b">10</span>cm,</p>
+                  <p>b=<span id="parallelogram-h">12</span>cm</p>
                 </div>
               </div>
               <div class="card-actions">
@@ -144,7 +129,9 @@
             </div>
           </div>
           <!-- card-4 -->
-          <div class="card w-full bg-base-100 border border-gray-400 hover:bg-[#69C7F0]">
+          <div
+            class="card w-full bg-base-100 border border-gray-400 hover:bg-[#69C7F0]"
+          >
             <figure class="px-10 pt-10">
               <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -153,63 +140,54 @@
               <p>Area (A) = 0.5 x d1 x d2</p>
               <div class="flex gap-2 justify-between">
                 <div class="flex gap-2 justify-between">
-                  <input
-                    class="w-24 bg-gray-300 pl-2"
-                    type="text"
-                    placeholder="d1"
-                    id="rhombus-d1"
-                  />
-                  <p>cm</p>
-                </div>
-                <div class="flex gap-2 justify-between">
-                  <input
-                    class="w-24 bg-gray-300 pl-2"
-                    type="text"
-                    placeholder="d2"
-                    id="rhombus-d2"
-                  />
-                  <p>cm</p>
+                  <p>a=<span id="rhombus-d1">16</span>cm,</p>
+                  <p>b=<span id="rhombus-d2">8</span>cm</p>
                 </div>
               </div>
               <div class="card-actions">
-                <button id="rhombus" class="btn bg-teal-200">
-                  Calculate
-                </button>
+                <button id="rhombus" class="btn bg-teal-200">Calculate</button>
               </div>
             </div>
           </div>
           <!-- card-5 -->
-          <div class="card w-full bg-base-100 border border-gray-400 hover:bg-[#69C7F0]">
+          <div
+            class="card w-full bg-base-100 border border-gray-400"
+          >
             <figure class="px-10 pt-10">
-              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 id="pentagon-title" class="card-title">Pentagon</h2>
-              <p>Area (A) = 0.5 x d1 x d2</p>
+              <p>Area (A) = 0.5 x p x b</p>
               <div class="flex gap-2 justify-between">
                 <div class="flex gap-2 justify-between">
-                  <input
-                    class="w-24 bg-gray-300 pl-2"
-                    type="text"
-                    placeholder="p"
-                    id="pentagon-p"
-                  />
-                  <p>cm</p>
-                </div>
-                <div class="flex gap-2 justify-between">
-                  <input
-                    class="w-24 bg-gray-300 pl-2"
-                    type="text"
-                    placeholder="b"
-                    id="pentagon-b"
-                  />
-                  <p>cm</p>
+                  <p>a=<span id="pentagon-p">6</span>cm,</p>
+                  <p>b=<span id="pentagon-b">10</span>cm</p>
                 </div>
               </div>
               <div class="card-actions">
-                <button id="pentagon" class="btn bg-teal-200">
-                  Calculate
-                </button>
+                <button id="pentagon" class="btn bg-teal-200">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-6 -->
+          <div
+            class="card w-full bg-base-100 border border-gray-400"
+          >
+            <figure class="px-10 pt-10">
+              <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="ellipse-title" class="card-title">Ellipse</h2>
+              <p>Area (A) = πab</p>
+              <div class="flex gap-2 justify-between">
+                <div class="flex gap-2 justify-between">
+                  <p>a=<span id="ellipse-a">10</span>cm,</p>
+                  <p>b=<span id="ellipse-b">4</span>cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button id="ellipse" class="btn bg-teal-200">Calculate</button>
               </div>
             </div>
           </div>
