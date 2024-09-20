@@ -27,12 +27,12 @@
     <main>
         <div class="flex justify-between w-[90%] bg-gray-200 mt-5 mx-auto">
           <div class="box flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
-            <div class="card w-full bg-base-100 shadow-xl">
+            <div class="card w-full bg-base-100 border border-gray-400 hover:bg-pink-300">
               <figure class="px-10 pt-10">
                 <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 id="element" class="card-title">Traingle</h2>
+                <h2 id="traingle-title" class="card-title">Traingle</h2>
                 <p>Area (A) = 0.5 x b x h</p>
                 <div class="flex gap-2 justify-between">
                   <div class="flex gap-2 justify-between">
@@ -58,17 +58,17 @@
                 </div>
                 <p id="show"></p>
                 <div class="card-actions">
-                  <button id="triangle" class="btn btn-primary">Buy Now</button>
+                  <button id="triangle" class="btn bg-teal-200">Calculate</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="ariya w-[25%] mx-auto text-center">
+          <div id="ariya-calculator" class="ariya w-[25%] mx-auto text-center border border-gray-400">
             <h1>Area Calculation</h1>
             <div class="overflow-x-auto">
               <table class="table">
                 <!-- head -->
-                <tbody id="table-cantainer"></tbody>
+                <tbody id="table-container"></tbody>
               </table>
             </div>
           </div>
@@ -77,3 +77,5 @@
       <script src="index.js"></script>
     </body>
   </html>
+
+  
