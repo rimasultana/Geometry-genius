@@ -14,68 +14,220 @@
   </head>
   <body>
     <header>
-      <nav class="flex justify-between items-center w-11/12 mx-auto bg-teal-100 p-5">
+      <nav
+        class="flex justify-between items-center w-11/12 mx-auto bg-teal-100 p-5"
+      >
         <div>
           <h1 class="text-3xl font-bold">Interactive</h1>
           <p class="text-lg text-gray-500">Geometry Genius</p>
         </div>
         <div>
-            <button class="btn bg-cyan-600">Blog</button>
+          <button class="btn bg-cyan-600">Blog</button>
         </div>
       </nav>
     </header>
     <main>
-        <div class="flex justify-between w-[90%] bg-gray-200 mt-5 mx-auto">
-          <div class="box flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
-            <div class="card w-full bg-base-100 border border-gray-400 hover:bg-pink-300">
-              <figure class="px-10 pt-10">
-                <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 id="traingle-title" class="card-title">Traingle</h2>
-                <p>Area (A) = 0.5 x b x h</p>
+      <div class="flex justify-between w-[90%] bg-gray-200 mt-5 mx-auto">
+        <div class="box flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
+          <!-- card-1 -->
+          <div
+            class="card w-full bg-base-100 border border-gray-400 hover:bg-pink-300"
+          >
+            <figure class="px-10 pt-10">
+              <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="traingle-title" class="card-title">Traingle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex gap-2 justify-between">
                 <div class="flex gap-2 justify-between">
-                  <div class="flex gap-2 justify-between">
-                    <input
-                      class="w-24 bg-gray-300"
-                      type="text"
-                      placeholder="b"
-                      name=""
-                      id="traingle-b"
-                    />
-                    <p>cm</p>
-                  </div>
-                  <div class="flex gap-2 justify-between">
-                    <input
-                      class="w-24 bg-gray-300"
-                      type="text"
-                      placeholder="h"
-                      name=""
-                      id="traingle-h"
-                    />
-                    <p>cm</p>
-                  </div>
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="b"
+                    name=""
+                    id="traingle-b"
+                  />
+                  <p>cm</p>
                 </div>
-                <p id="show"></p>
-                <div class="card-actions">
-                  <button id="triangle" class="btn bg-teal-200">Calculate</button>
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="h"
+                    name=""
+                    id="traingle-h"
+                  />
+                  <p>cm</p>
                 </div>
+              </div>
+              <div class="card-actions">
+                <button id="triangle" class="btn bg-teal-200">Calculate</button>
               </div>
             </div>
           </div>
-          <div id="ariya-calculator" class="ariya w-[25%] mx-auto text-center border border-gray-400">
-            <h1>Area Calculation</h1>
-            <div class="overflow-x-auto">
-              <table class="table">
-                <!-- head -->
-                <tbody id="table-container"></tbody>
-              </table>
+          <!-- Card-2 -->
+          <div
+            class="card w-full bg-base-100 border border-gray-400 hover:bg-pink-300"
+          >
+            <figure class="px-10 pt-10">
+              <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="rectangle-title" class="card-title">Rectangle</h2>
+              <p>Area (A) = w x h</p>
+              <div class="flex gap-2 justify-between">
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="w"
+                    id="rectangle-w"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="i"
+                    id="rectangle-i"
+                  />
+                  <p>cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button id="rectangle" class="btn bg-teal-200">
+                  Calculate
+                </button>
+                <!-- ID পরিবর্তন -->
+              </div>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card w-full bg-base-100 border border-gray-400">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/parallelogram.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="parallelogram-title" class="card-title">Parallelogram</h2>
+              <p>Area (A) = b x h</p>
+              <div class="flex gap-2 justify-between">
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="b"
+                    id="parallelogram-b"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="h"
+                    id="parallelogram-h"
+                  />
+                  <p>cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button id="parallelogram" class="btn bg-teal-200">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="card w-full bg-base-100 border border-gray-400 hover:bg-[#69C7F0]">
+            <figure class="px-10 pt-10">
+              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="rhombus-title" class="card-title">Rhombus</h2>
+              <p>Area (A) = 0.5 x d1 x d2</p>
+              <div class="flex gap-2 justify-between">
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="d1"
+                    id="rhombus-d1"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="d2"
+                    id="rhombus-d2"
+                  />
+                  <p>cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button id="rhombus" class="btn bg-teal-200">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card-5 -->
+          <div class="card w-full bg-base-100 border border-gray-400 hover:bg-[#69C7F0]">
+            <figure class="px-10 pt-10">
+              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 id="pentagon-title" class="card-title">Pentagon</h2>
+              <p>Area (A) = 0.5 x d1 x d2</p>
+              <div class="flex gap-2 justify-between">
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="p"
+                    id="pentagon-p"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex gap-2 justify-between">
+                  <input
+                    class="w-24 bg-gray-300 pl-2"
+                    type="text"
+                    placeholder="b"
+                    id="pentagon-b"
+                  />
+                  <p>cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button id="pentagon" class="btn bg-teal-200">
+                  Calculate
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </main>
-      <script src="index.js"></script>
-    </body>
-  </html>
-
-  
+        <div
+          id="ariya-calculator"
+          class="ariya w-[25%] mx-auto text-center border border-gray-400"
+        >
+          <h1>Area Calculation</h1>
+          <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+              <tbody id="table-container"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
